@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Teko:wght@400;500;600&display=swap');
+
+:root {
+  --bg-color: #F5F7F8;
+  --mc-blue: #1891C1;
+  --mc-lgt-blue: #01BCAF;
+  --mc-green: #03A33C;
+  --mc-lgt-green: #A7D760;
+  --mc-brown: #BD6F51;
+  --dark-grey: #555;
+  --white: #F5F7F8;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.15;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Teko', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--bg-color);
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo>img {
+  max-height: 4rem;
+}
+
+.title {
+  /* height: 30vh; */
+  /* background: var(--mc-blue) url(../img/Minecraft.jpg) no-repeat top center;
+  position: relative;
+  background-size: cover; */
+}
+
+h1 {
+  font-size: 5rem;
+  color: #01BCAF;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px #BD6F51;
+  padding: 1rem;
+}
+
+.attaction-item {
+  max-width: 992px;
+  margin: 10px auto;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, .1);
+  background-color: aquamarine;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  color: var(--bg-color);
+}
+
+#mindstorms {
+  background-color: var(--mc-blue);
+}
+#minecraft{
+  background-color: var(--mc-lgt-blue);
+}
+#experiments{
+  background-color: var(--mc-green);
+}
+#virtual{
+  background-color: var(--mc-lgt-green);
+}
+#manual{
+  background-color: var(--mc-brown);
+}
+
+.attaction-item div {
+  width: 50%;
+}
+
+.attaction-item div.text {
+  padding: 1.5rem;
+}
+
+ul {
+  list-style-position: inside;
+  padding-inline-start: 0px;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 2.6rem;
+  letter-spacing: 0.05rem;
+  text-shadow: 2px 3px var(--dark-grey);
+}
